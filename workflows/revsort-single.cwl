@@ -20,11 +20,11 @@ steps:
     in:
       input: input
     out: [output]
-    run: revtool.cwl
+    run: tools/revtool.cwl
 
   sorted:
     in:
       input: rev/output
       reverse: reverse_sort
     out: [output]
-    run: sorttool.cwl
+    run: tools/sorttool.cwl

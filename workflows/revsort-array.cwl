@@ -24,7 +24,7 @@ steps:
       input: input
     out: [output]
     scatter: input
-    run: revtool.cwl
+    run: tools/revtool.cwl
     requirements:
       - class: ResourceRequirement
         coresMin: 1
@@ -35,7 +35,7 @@ steps:
       reverse: reverse_sort
     scatter: input
     out: [output]
-    run: sorttool.cwl
+    run: tools/sorttool.cwl
     requirements:
       - class: ResourceRequirement
         coresMin: 1
